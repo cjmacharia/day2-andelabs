@@ -1,7 +1,7 @@
 def data_type(n):
     if type(n) == int:
         if n < 100:
-            return 'less than 100'
+            return 'less than 100'	
         elif n > 100:
             return 'more than 100'
         else:
@@ -18,12 +18,12 @@ def data_type(n):
 
     elif type(n) == bool:
         return n
-
     else:
         return 'no value'
+		
     if type(n) == int:
-        if n < 100:
-            return 'less than 100'
+		if n < 100:
+            return 'less than 100'	
         elif n > 100:
             return 'more than 100'
         else:
@@ -40,7 +40,7 @@ def data_type(n):
 
     elif type(n) == bool:
         return n
-
     else:
         return 'no value'
+		
 print (data_type(10))    

@@ -2,7 +2,7 @@ import unittest
 from car import Car
 
 class CarClassTest(unittest.TestCase):
-    """docstring for CarClassTest"""
+    
 
     def test_car_instance(self):
         honda = Car('Honda')

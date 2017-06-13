@@ -1,4 +1,6 @@
 class Car(object):
+
+
     model = 'GM'
     name = 'General'
     car_type = ''
@@ -16,7 +18,6 @@ class Car(object):
         two_doors = ['Porshe', 'Koenigsegg']
         if self.name in two_doors:
             self.num_of_doors = 2
-
         if self.car_type == 'trailer':
             self.num_of_wheels = 8
 

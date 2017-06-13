@@ -7,9 +7,10 @@ def fizz_buzz(n):
         elif n % 3 == 0 and n % 5 == 0:
             return 'FizzBuzz'
         else:
-            return n
+            return n		
     else:
         return "Incorrect input"
+		
 def fizz_buzz(n):
     if type(n) == int:
         if n % 3 == 0 and n % 5 != 0:
@@ -22,4 +23,5 @@ def fizz_buzz(n):
             return n
     else:
         return "Incorrect input"
+		
 print (fizz_buzz(10))        
